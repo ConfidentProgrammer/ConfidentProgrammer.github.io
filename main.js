@@ -27,3 +27,14 @@ act.addEventListener('click', function(){
         tl.reverse();
     }
 })
+
+/// for PC
+
+let myName = document.querySelectorAll('span');
+
+let tlName = gsap.timeline();
+
+tlName.from(myName, .5, {
+    opacity:0,
+    stagger: .14
+})
