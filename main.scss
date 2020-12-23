@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+html{
+
+height: 100%;
+
+}
+
+body{
+    background:url("imageMobile.png");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    background-color:rgba(255,255,255,0.2);
+    height: 100%;
+    backdrop-filter: blur(5px);
+    display: grid;
+    grid-template-columns: auto;
+    padding: 1em;
+    header img{
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+
+    }
+}
+
+.forPc{
+    display: none;
+}
+
+header{
+    //background-color: red;
+    height: 45px;
+    display: flex;
+    nav{
+       
+        display: flex;
+        list-style-type: none;
+        clip-path: ellipse(50% 50% at -50% 50%);
+       
+    }
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    img{
+        opacity: 0;
+        transform: translateX(-2px);
+    }
+   
+}
+
+nav ul li a{
+    margin: 0px 15px;
+}
+
+.activator img{
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+}
+
+.heading{
+    margin-top: -190px;
+}
+.heading span{
+    font-size: 55px;
+    font-weight: 300;
+    letter-spacing: -10px;
+}
+.heading .bold{
+    font-weight: normal;
+}
+.sub-heading{
+    margin-top: -10px;
+}
+.web-developer, .frontend-developer{
+    margin: 0;
+ opacity: .47;
+ margin-left: 5px;
+}
+.title{
+    margin-top: -10px;
+}
+
+.social-links{
+    padding: 0;
+    display: flex;
+    width: 90px;
+    list-style-type: none;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.title img{
+    width: 25px;
+    height: 25px;
+}
+
+.programming-image{
+    display: none;
+}
+@media (min-width:1025px){
+    body{
+        background:url("bckpc.png");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 60px;
+        background-color:rgba(255,255,255,0.35);
+        backdrop-filter: blur(40px);
+        border: white solid 2px transparent;
+        background-clip: padding-box;
+        width: 1400px;
+        height: 610px;
+    }
+
+    .heading span{
+        font-size: 100px;
+    }
+    .title{
+        margin-left: 100px;
+        margin-top: 140px;
+        
+    }
+
+    .sub-heading{
+     font-size: 25px;
+    }
+    .frontend-developer{
+        font-size: 20px;
+        margin-left: 10px;
+       }
+
+    .forPc{
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 22px;
+        margin-top: 25px;
+        margin-right: 40px;
+    }
+
+    .forPc a{
+        text-decoration: none;
+        color: black;
+    }
+
+    header{
+        display: none;
+    }
+
+    .programming-image{
+        display: block ;
+        position: absolute;
+        right: 30px;
+        top: 23%;
+        .programming{
+            width: 650px;
+            height: 320px;
+        }
+    }
+} 
+
+
+@media (max-height:500px){
+
+    body{
+        background:url("bckpc.png");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .title{
+        margin-top: 170px;
+    }
+
+    .sub-heading{
+        margin-top: -20px;
+    }
+    .programming-image{
+        display: block ;
+        position: absolute;
+        right: -25px;
+        top: 30%;
+        .programming{
+            width: 340px;
+            height: 140px;
+        }
+    }
+}
