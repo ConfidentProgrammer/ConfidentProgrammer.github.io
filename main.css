@@ -170,7 +170,19 @@ nav ul li a {
   margin-top: -250px;
 }
 
+.ellipse {
+  display: none;
+}
+
 @media (min-width: 1025px) {
+  .ellipse {
+    display: block;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
   .container {
     position: relative;
     top: 50%;
@@ -242,7 +254,7 @@ nav ul li a {
     margin-top: 400px;
   }
   .body-about {
-    font-size: 25px;
+    font-size: 20px;
     width: 600px;
     margin-top: -100px;
     margin-left: 200px;
@@ -257,6 +269,9 @@ nav ul li a {
 }
 
 @media (max-height: 500px) {
+  .ellipse {
+    display: none;
+  }
   .title {
     margin-top: 240px;
   }
