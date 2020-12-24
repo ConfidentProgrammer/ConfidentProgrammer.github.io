@@ -4,9 +4,6 @@ html {
 }
 
 body {
-  background: url("imageMobile.png");
-  background-size: cover;
-  background-attachment: fixed;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -16,10 +13,7 @@ body {
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.2);
   height: 100%;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto;
@@ -28,8 +22,8 @@ body {
 }
 
 .container header img {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   padding: 5px;
 }
 
@@ -43,8 +37,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  top: 10px;
-  left: 20px;
+  background-color: white;
+  padding: 10px;
+  top: 0;
+  width: 100%;
+  left: 10px;
 }
 
 header nav {
@@ -76,8 +73,8 @@ nav ul li a {
 }
 
 .activator img {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   padding: 5px;
 }
 
@@ -129,12 +126,17 @@ nav ul li a {
   display: none;
 }
 
+.about-profile {
+  width: 200px;
+  height: 200px;
+  margin-top: -20px;
+}
+
+.heading-about {
+  text-align: center;
+}
+
 @media (min-width: 1025px) {
-  body {
-    background: url("bckpc.png");
-    background-size: cover;
-    background-attachment: fixed;
-  }
   .container {
     position: relative;
     top: 50%;
@@ -142,9 +144,6 @@ nav ul li a {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     border-radius: 60px;
-    background-color: rgba(255, 255, 255, 0.35);
-    -webkit-backdrop-filter: blur(40px);
-            backdrop-filter: blur(40px);
     border: white solid 2px transparent;
     background-clip: padding-box;
     width: 1400px;
@@ -155,7 +154,7 @@ nav ul li a {
   }
   .title {
     margin-left: 100px;
-    margin-top: 140px;
+    margin-top: 280px;
   }
   .sub-heading {
     font-size: 25px;
@@ -169,12 +168,19 @@ nav ul li a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    width: 90%;
+    padding: 20px;
+    background-color: white;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     font-size: 22px;
-    margin-top: 25px;
+    margin-top: 0;
     margin-right: 40px;
+    top: 0;
   }
   .forPc a {
     text-decoration: none;
@@ -197,16 +203,25 @@ nav ul li a {
     width: 650px;
     height: 320px;
   }
+  .about-section {
+    margin-top: 400px;
+  }
+}
+
+.heading-text {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.body-about {
+  opacity: .67;
+  font-size: 1.1rem;
+  border: 1px solid black;
 }
 
 @media (max-height: 500px) {
-  body {
-    background: url("bckpc.png");
-    background-size: cover;
-    background-attachment: fixed;
-  }
   .title {
-    margin-top: 170px;
+    margin-top: 240px;
   }
   .sub-heading {
     margin-top: -20px;
