@@ -58,3 +58,11 @@ function toggleOpenOneOnly(e) {
 }
 
 
+let projectD = document.getElementById('p');
+let summary = document.querySelectorAll('.project-summary');
+
+for(let i =0 ; i<summary.length ; ++i){
+    summary[i].addEventListener('click', function(){
+        projectD.style.display = "none";
+    })
+}
