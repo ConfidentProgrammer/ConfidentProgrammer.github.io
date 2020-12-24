@@ -174,12 +174,42 @@ nav ul li a{
 .skills-link{
     color: black;
 }
+.project-section{
+}
+.project-details{
+    padding: 10px;
+}
+.project-summary{
+    padding: 10px;
+    border: 2px solid  #3126f8e5;
+    display: inline;
+}
+.project-summary:focus{
+    border: 2px solid  #3126f8e5;
 
+}
+.project-info{
+    font-weight: normal;
+   color: rgb(77, 77, 77);
+}
 
+summary::-webkit-details-marker { font-size:0px }
 
-
-
-
+.pro-img{
+    width: 150px;
+    height: 150px;
+}
+.pro-img-div{
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0px 0px 0px ;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.project-dummy{
+    display: none;
+}
 
 
 
@@ -299,6 +329,61 @@ nav ul li a{
     .skills-section{
         margin-top: -100px;
     }
+
+    .project-section{
+       margin-left: 15%;
+    }
+   .pro-img{
+       transform: scale(1.2);
+       top: 250px;
+       right: 120px;
+ 
+   }
+
+   .pro-img-div{
+    width: 200px;
+}
+
+
+.project-info{
+    margin-top: -120px;
+    font-size: 1.2rem;
+    width: 700px;
+}
+
+
+.res{
+    top: 350px;
+    right: 80px;
+}
+.for{
+    top: 420px;
+    right: 80px;
+
+}
+.sec{
+    top: 500px;
+    right: 80px;
+
+}
+.wea{
+    top: 570px;
+    right: 80px;
+
+}
+.app{
+    top: 300px;
+    right: 80px;
+}
+
+.project-dummy{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+
+
 } 
 
 
