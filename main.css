@@ -147,6 +147,10 @@ nav ul li a {
   font-size: 1.1rem;
 }
 
+.about-section {
+  margin-top: -250px;
+}
+
 @media (min-width: 1025px) {
   .container {
     position: relative;
