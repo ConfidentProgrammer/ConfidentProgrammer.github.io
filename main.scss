@@ -158,10 +158,16 @@ nav ul li a{
     display: none;
 }
 
+.skills-section{
+    margin-top: 100px;
+}
+.skills-it{
+    color: #3126f8e5;
+}
 
-
-
-
+.skills-link{
+    color: black;
+}
 
 
 
@@ -280,6 +286,10 @@ nav ul li a{
         height:200px;
         right: 200px;
         top: 250px;
+    }
+
+    .skills-section{
+        margin-top: -100px;
     }
 } 
 

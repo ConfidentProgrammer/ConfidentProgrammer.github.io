@@ -30,7 +30,7 @@ act.addEventListener('click', function(){
 
 /// for PC
 
-let myName = document.querySelectorAll('span');
+let myName = document.querySelectorAll('.normal');
 
 let tlName = gsap.timeline();
 
