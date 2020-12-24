@@ -34,7 +34,12 @@ let myName = document.querySelectorAll('.normal');
 
 let tlName = gsap.timeline();
 
-tlName.from(myName, .5, {
-    opacity:0,
-    stagger: .14
+tlName.from(myName, .1, {
+   opacity:0,
+    'fontSize' : '80px',
+    
+    stagger: .1
 })
+
+
+

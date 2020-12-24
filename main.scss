@@ -115,12 +115,17 @@ nav ul li a{
 .social-links{
     padding: 0;
     display: flex;
-    width: 90px;
+   margin:0;
+   width: 220px;
     list-style-type: none;
-    margin-left: 10px;
+    justify-content: space-between;
+    margin-left: -33px;
     margin-top: 15px;
 }
-
+.social-linkss{
+   
+    margin-left: 40px;
+}
 .title img{
     width: 25px;
     height: 25px;
@@ -163,6 +168,7 @@ nav ul li a{
 }
 .skills-it{
     color: #3126f8e5;
+    opacity: 1;
 }
 
 .skills-link{
@@ -216,7 +222,9 @@ nav ul li a{
         margin-top: 280px;
         
     }
-
+    .normal{
+        cursor: pointer;
+    }
     .sub-heading{
      font-size: 25px;
     }
