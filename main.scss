@@ -2,6 +2,7 @@
 html{
 
 height: 100%;
+scroll-behavior: smooth;
 
 }
 
@@ -121,6 +122,17 @@ nav ul li a{
     text-align: center;
 }
 
+.heading-text{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.body-about{
+    opacity: .67;
+    font-size: 1.1rem;
+
+}
+
 
 
 
@@ -222,20 +234,21 @@ nav ul li a{
 
 
 
+    .body-about{
+        font-size: 25px;
+        width: 600px;
+        margin-top: -100px;
+        margin-left: 200px;
+    }
 
-    
+    .about-profile{
+        position: absolute;
+        width:200px ;
+        height:200px;
+        right: 200px;
+        top: 250px;
+    }
 } 
-
-.heading-text{
-    text-align: center;
-    font-size: 4rem;
-}
-
-.body-about{
-    opacity: .67;
-    font-size: 1.1rem;
-    border: 1px solid black;
-}
 
 
 
