@@ -272,5 +272,8 @@ nav ul li a {
     width: 340px;
     height: 140px;
   }
+  .about-section {
+    margin-top: -10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
