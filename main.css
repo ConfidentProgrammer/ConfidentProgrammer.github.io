@@ -236,6 +236,11 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+.view-it {
+  text-decoration: none;
+  color: #4238ff;
+}
+
 @media (min-width: 1025px) {
   .ellipse {
     display: block;

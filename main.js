@@ -36,7 +36,7 @@ let tlName = gsap.timeline();
 
 tlName.from(myName, .1, {
    opacity:0,
-    'fontSize' : '80px',
+
     
     stagger: .1
 })
