@@ -203,6 +203,7 @@ nav ul li a {
   padding: 10px;
   border: 2px solid  #3126f8e5;
   display: inline;
+  cursor: pointer;
 }
 
 .project-summary:focus {
