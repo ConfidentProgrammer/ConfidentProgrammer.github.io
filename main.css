@@ -118,7 +118,7 @@ nav ul li a {
 
 .web-developer, .frontend-developer {
   margin: 0;
-  opacity: .47;
+  color: #808080;
   margin-left: 5px;
 }
 
@@ -170,7 +170,7 @@ nav ul li a {
 }
 
 .body-about {
-  opacity: .67;
+  color: #808080;
   font-size: 1.1rem;
 }
 
