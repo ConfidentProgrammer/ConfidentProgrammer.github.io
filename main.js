@@ -34,7 +34,7 @@ let myName = document.querySelectorAll('.normal');
 
 let tlName = gsap.timeline();
 
-tlName.from(myName, .1, {
+tlName.from(myName, .4, {
    opacity:0,
 
     
@@ -66,3 +66,44 @@ for(let i =0 ; i<summary.length ; ++i){
         projectD.style.display = "none";
     })
 }
+
+
+//setting the borders  of the nav items
+//grabbinmg the elemetns
+//let choose = 0;
+let navHome  = document.getElementById('nav-home');
+let navAbout  = document.getElementById('nav-about');
+let navSkills = document.getElementById('nav-skills');
+let navProjects  = document.getElementById('nav-projects');
+
+navAbout.addEventListener('click', ()=>{
+ navAbout.classList.add('edited');
+ navHome.classList.remove('edited');
+ navSkills.classList.remove('edited')
+ navProjects.classList.remove('edited')
+})
+navSkills.addEventListener('click', ()=>{
+  navAbout.classList.remove('edited');
+  navHome.classList.remove('edited');
+  navSkills.classList.add('edited')
+  navProjects.classList.remove('edited')
+})
+navProjects.addEventListener('click', ()=>{
+  navAbout.classList.remove('edited');
+  navHome.classList.remove('edited');
+  navSkills.classList.remove('edited')
+  navProjects.classList.add('edited')
+})
+navHome.addEventListener('click', ()=>{
+  navAbout.classList.remove('edited');
+  navHome.classList.add('edited');
+  navSkills.classList.remove('edited')
+  navProjects.classList.remove('edited')
+})
+
+
+
+
+
+
+

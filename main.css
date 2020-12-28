@@ -243,6 +243,14 @@ summary::-webkit-details-marker {
 }
 
 @media (min-width: 1025px) {
+  .pc {
+    border: none;
+    padding: none;
+  }
+  .edited {
+    border: 3px solid #4238ff;
+    padding: 5px 10px 5px 10px;
+  }
   .ellipse {
     display: block;
     height: 100px;
@@ -308,7 +316,6 @@ summary::-webkit-details-marker {
     display: none;
   }
   .home {
-    border: 3px solid #4238ff;
     padding: 5px 10px 5px 10px;
   }
   .programming-image {
